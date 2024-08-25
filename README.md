@@ -62,28 +62,31 @@ A MERN stack application for managing student-teacher appointments. This web app
    cd student-teacher-booking
 
 2. **Navigate to the client directory and install dependencies:**
-
+    ```bash
     cd client
     npm install
 
 3. **Navigate to the server directory and install dependencies:**
-
+    ```bash
     cd ../server
     npm install
 
 4. **Setup environment variables:**
     Create a .env file in the server directory with the following variables:
-
+    ```bash
     MONGODB_URI=your_mongodb_connection_string
     JWT_SECRET=your_jwt_secret
 
 5. **Run the application:**
     *Start the server*
+   ```bash
     npm start
-
+  `
     *Navigate to the client directory and start the client:*
+   ```bash
     cd ../client
     npm start
+   ```
 
 The application will be accessible at "http://localhost:5173" for the client and "http://localhost:5000" for the server.
 
