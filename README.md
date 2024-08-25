@@ -4,15 +4,15 @@ A MERN stack application for managing student-teacher appointments. This web app
 
 ## Table of Contents
 
-- [Features]
-- [TechStack]
-- [Installation]
-- [Usage]
-- [APIEndpoints]
-- [FolderStructure]
-- [Contributing]
-- [License]
-
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
+  
 ## Features
 
 - **Student Functionality**:
