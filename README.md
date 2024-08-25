@@ -37,6 +37,13 @@ A MERN stack application for managing student-teacher appointments. This web app
   - Bootstrap (for styling)
   - Vite (for development and build)
 
+- **Other libraries**
+  - Popper.js (for managing popups)
+  - moment.js (for time formatting)
+  - SweetAlert2 (for delete alert)
+  - Font Awesome (for icons)
+  - GSAP (for scrolling effects)
+
 - **Backend**:
   - Node.js
   - Express.js
