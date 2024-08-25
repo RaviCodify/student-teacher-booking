@@ -137,14 +137,13 @@ The application will be accessible at "http://localhost:5173" for the client and
 
 ## Folder Strcture
 
+```plaintext
 student-teacher-booking/
-│
-├── client/                   # React frontend
+├── client/                    # React frontend
 │   ├── public/
 │   ├── src/
 │   └── package.json
-│
-├── server/                   # Node.js backend
+├── server/                    # Node.js backend
 │   ├── config/
 │   ├── controllers/
 │   ├── middleware/
@@ -152,7 +151,6 @@ student-teacher-booking/
 │   ├── routes/
 │   ├── .env
 │   └── server.js
-│
 └── README.md
 
 
