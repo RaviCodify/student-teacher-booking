@@ -78,15 +78,17 @@ A MERN stack application for managing student-teacher appointments. This web app
     JWT_SECRET=your_jwt_secret
 
 5. **Run the application:**
-    *Start the server*
+
+   *Start the server:*
    ```bash
-    npm start
-  ``
-    *Navigate to the client directory and start the client:*
-   ```bash
-    cd ../client
-    npm start
-   ```
+   npm start
+   
+  *Navigate to the client directory and start the client:*
+  ```bash
+  cd ../client
+  npm start
+  ```
+
 
 The application will be accessible at "http://localhost:5173" for the client and "http://localhost:5000" for the server.
 
