@@ -81,7 +81,7 @@ A MERN stack application for managing student-teacher appointments. This web app
     *Start the server*
    ```bash
     npm start
-  `
+  ``
     *Navigate to the client directory and start the client:*
    ```bash
     cd ../client
