@@ -152,7 +152,7 @@ student-teacher-booking/
 │   ├── .env
 │   └── server.js
 └── README.md
-
+```
 
 ## Contributing
 
