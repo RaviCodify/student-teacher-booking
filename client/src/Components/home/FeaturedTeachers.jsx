@@ -11,7 +11,7 @@ const FeaturedTeachers = () => {
 
   const fetchUsers = () => {  
     axios
-      .get("http://localhost:5000/api/public/teachers")
+      .get("https://student-teacher-booking-server.onrender.com/api/public/teachers")
       .then((response) => {
         setTeachers(response.data.filter((user) => user.role === 'teacher'));
       })

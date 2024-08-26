@@ -8,7 +8,7 @@ const Message = ({ userId, userRole }) => {
     const fetchMessages = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/messages/${userId}`,
+          `https://student-teacher-booking-server.onrender.com/api/messages/${userId}`,
           {
             params: { userRole },
             headers: {

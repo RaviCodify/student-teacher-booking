@@ -17,8 +17,8 @@ const UserList = ({ userType, isLoggedIn, userRole }) => {
 
   const fetchUsers = () => {
     const endpoint = userType === "teacher" 
-      ? "http://localhost:5000/api/public/teachers" 
-      : "http://localhost:5000/api/user";
+      ? "https://student-teacher-booking-server.onrender.com/api/public/teachers" 
+      : "https://student-teacher-booking-server.onrender.com/api/user";
   
     axios
       .get(endpoint, {
@@ -39,7 +39,7 @@ const UserList = ({ userType, isLoggedIn, userRole }) => {
   const deleteUser = (id) => {
     handleDelete(() => {
       axios
-        .delete(`http://localhost:5000/api/${id}`, {
+        .delete(`https://student-teacher-booking-server.onrender.com/api/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

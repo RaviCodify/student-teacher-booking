@@ -15,7 +15,7 @@ const SendMessage = ({userId, userRole}) => {
         e.preventDefault();
         const senderId = await fetchIdFromEmail(email);
         if (senderId===userId) {
-          axios.post("http://localhost:5000/api/messages/send", { senderId, recieverId, message, userRole }, {
+          axios.post("https://student-teacher-booking-server.onrender.com/api/messages/send", { senderId, recieverId, message, userRole }, {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`
             }

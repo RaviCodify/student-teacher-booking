@@ -13,7 +13,7 @@ const ManageBookings = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/bookings/all", {
+      .get("https://student-teacher-booking-server.onrender.com/api/bookings/all", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -34,7 +34,7 @@ const ManageBookings = () => {
 
   const updateStatus = (id, status) => {
     axios
-      .patch(`http://localhost:5000/api/bookings/update/${id}`, { status }, {
+      .patch(`https://student-teacher-booking-server.onrender.com/api/bookings/update/${id}`, { status }, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`, 
         },
@@ -77,7 +77,7 @@ const ManageBookings = () => {
   const deleteBooking = (id) => {
     handleDelete(() => {
       axios
-        .delete(`http://localhost:5000/api/bookings/delete/${id}`, {
+        .delete(`https://student-teacher-booking-server.onrender.com/api/bookings/delete/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

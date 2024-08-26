@@ -50,7 +50,7 @@ export const handleAuth = (auth, navigate) => {
 // extract user Id from an email
 export const fetchIdFromEmail = async (email) => {
   try {
-    const response = await axios.get("http://localhost:5000/api/user", {
+    const response = await axios.get("https://student-teacher-booking-server.onrender.com/api/user", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
@@ -68,7 +68,7 @@ export const fetchIdFromEmail = async (email) => {
 export const fetchBookings = async (userId, userRole) => {
   try {
     const response = await axios.get(
-      `http://localhost:5000/api/bookings/${userId}`,
+      `https://student-teacher-booking-server.onrender.com/api/bookings/${userId}`,
       {
         params: { userRole },
         headers: {

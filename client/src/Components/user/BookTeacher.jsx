@@ -27,7 +27,7 @@ const BookTeacher = ({ userId }) => {
     const studentId = await fetchIdFromEmail(email);
     if (studentId === userId) {
       axios
-        .post("http://localhost:5000/api/bookings/book", {
+        .post("https://student-teacher-booking-server.onrender.com/api/bookings/book", {
           studentId,
           teacherId,
           date,

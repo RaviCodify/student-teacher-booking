@@ -65,7 +65,7 @@ const SignUp = ({ userRole }) => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/signup",
+        "https://student-teacher-booking-server.onrender.com/api/signup",
         formState
       );
       console.log(response);
