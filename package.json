@@ -1,0 +1,16 @@
+{
+  "name": "student-teacher-booking",
+  "version": "1.0.0",
+  "description": "A MERN stack application for managing student-teacher appointments. This web application allows students to book appointments with teachers, and teachers and administrators to manage and oversee these bookings.",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "cd server && npm install",
+    "start-server": "cd server && node server.js",
+    "install-client": "cd client && npm install",
+    "build-client": "cd client && npm run build",
+    "start-client": "cd client && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
