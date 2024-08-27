@@ -29,20 +29,7 @@ const Home = () => {
       }
     );
   };
-  const initAnimation = (elementRef) => {
-    gsap.fromTo(
-      elementRef.current,
-      { opacity: 0, y: -25 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-      }
-    );
-  };
-
   useEffect(() => {
-    initAnimation(heroRef)
     createScrollAnimation(heroRef);
     createScrollAnimation(featuredRef);
     createScrollAnimation(testimonialsRef);

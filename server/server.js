@@ -5,8 +5,20 @@ const cors = require("cors");
 const connectDB = require("./config/db");
 
 const corsOptions = {
-  origin: "https://student-teacher-booking.onrender.com"
-}
+  origin: function (origin, callback) {
+    const allowedOrigins = [
+      "https://student-teacher-booking.onrender.com",
+      "http://127.0.0.1:5173"
+    ];
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  }
+};
+
+
 const app = express();
 const port = 5000;
 
